@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-3" *ngFor="let t of todo">
+            <div class="card">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body ms-2">
+                  <h5 class="card-title">{{t.name}}</h5>
+                  <p class="card-text">{{t.description}}</p>
+                  <a href="#" class="btn btn-danger" (click)="onclick(todo)">delete</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
